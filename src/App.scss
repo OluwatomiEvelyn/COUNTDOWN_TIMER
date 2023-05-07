@@ -1,0 +1,82 @@
+ @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=League+Spartan:wght@500;700;800&family=Public+Sans:ital,wght@0,300;0,700;1,400&family=Red+Hat+Text:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App{
+  background-color:hsl(235, 16%, 14%)  ;
+  font-family: 'Red Hat Text',sans-serif;
+
+  main{
+    width: 100vw;
+    height: 80vh;
+    background: url('./images/bg-stars.svg');
+    background-size: cover;
+    h1{
+      padding-top: 14vh;
+      letter-spacing: 2px;
+      color: white;
+    }
+    section{
+      display: flex;
+      justify-content: space-between;
+      width: 45vw;
+      margin-left: 27vw;
+      margin-top: 6vh;
+      div{
+        p{
+          width: 9.2vw;
+          text-align: center;
+          font-size: 47px;
+          padding-top: 2.5vh;
+          font-weight: 700;
+          height: 13vh;
+          border-radius: 4px;
+          background-color: hsl(236, 21%, 26%);
+          color: hsl(345, 95%, 68%);
+          margin-bottom: 2vh;
+        }
+        span{
+          display: block;
+          text-align: center;
+          font-weight: 700;
+          color: white;
+        }
+      }
+    }
+  }
+  footer{
+    height: 20vh;
+    width: 100vw;
+    background: url('./images/pattern-hills.svg');
+    .feet{
+      margin-right: 1.35vw;
+      font-size: 26px;
+      margin-top: 6vh;
+      cursor: pointer;
+      transition:color 0.4s ease-in ;
+    }
+    .feet:hover{
+      color: hsl(345, 95%, 68%);
+    }
+
+  }
+}
+@media screen and (max-width:'500px') {
+  .App{
+    main{
+      section{
+        width: 85vw;
+        margin-left:12.5vw ;
+        div{
+          p{
+            width: 18vw;
+          }
+        }
+
+      }
+    }
+  }
+  
+}
